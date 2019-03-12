@@ -33,5 +33,4 @@ border-bottom: 1px solid black
 
 .cell:hover{
     cursor:pointer;
-    background-color: red;
 }
