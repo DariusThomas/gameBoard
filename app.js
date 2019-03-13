@@ -16,9 +16,13 @@ cells.forEach(function(cell){
 });
 
 function cellClicked(e){
+    if(count == 8){
+        count ++  
+        e.target.textContent ="X"
     if(count == 9 && results.textContent == "Tic Tac Toe"){
         count = -1;
         results.textContent = "Draw";
+    }
     } else if(count % 2 == 0 && e.target.textContent == ""){
         count ++  
         e.target.textContent ="X"
